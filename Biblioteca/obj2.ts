@@ -9,7 +9,7 @@ export class LivroCategoria extends BaseLivro {
     }
     
     exibirDetalhes() {
-        console.log(`${this.titulo}, ${this.autor}, ${this.ano}`)
+        console.log(`${this.titulo}, ${this.autor}, ${this.ano}, ${this.categoria}`)
     }
 
     antigo(): boolean{

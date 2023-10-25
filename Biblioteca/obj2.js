@@ -25,7 +25,7 @@ var LivroCategoria = /** @class */ (function (_super) {
         return _this;
     }
     LivroCategoria.prototype.exibirDetalhes = function () {
-        console.log("".concat(this.titulo, ", ").concat(this.autor, ", ").concat(this.ano));
+        console.log("".concat(this.titulo, ", ").concat(this.autor, ", ").concat(this.ano, ", ").concat(this.categoria));
     };
     LivroCategoria.prototype.antigo = function () {
         if (this.ano < 2000) {
