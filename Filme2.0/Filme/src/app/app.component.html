@@ -1,0 +1,32 @@
+<main ngClass="{{Gender}}">
+  <div class="container">
+      <input [(ngModel)]="Gender" type="text" placeholder="Escreva um gênero de filme">
+    <div [ngSwitch]="Gender">
+      <h3 *ngSwitchCase=" 'Romance' ">
+        <div *ngFor="let x of listaRomance">
+          <p>{{x.titulo}}</p>
+          <p>{{x.ano}}</p>
+        </div>
+      </h3>
+      <h3 *ngSwitchCase=" 'Ação' ">
+        <div *ngFor="let y of listaAcao">
+          <p>{{y.titulo}}</p>
+          <p>{{y.ano}}</p>
+        </div>
+      </h3>
+      <h3 *ngSwitchCase=" 'Comédia' ">
+        <div *ngFor="let z of listaComedia">
+          <p>{{z.titulo}}</p>
+          <p>{{z.ano}}</p>
+        </div>
+      </h3>
+      <h3 *ngSwitchCase=" 'Terror' ">
+        <div *ngFor="let w of listaTerror">
+          <p>{{w.titulo}}</p>
+          <p>{{w.ano}}</p>
+        </div>
+      </h3>
+    </div>
+  </div>
+</main>
+<router-outlet></router-outlet>
